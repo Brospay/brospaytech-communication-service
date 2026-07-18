@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payout Completed - ZenPay</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f5f7fa;">
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #f5f7fa; padding: 40px 20px;">
+    <tr>
+      <td align="center">
+        <table width="600" cellpadding="0" cellspacing="0" border="0" style="background-color: #ffffff; border-radius: 12px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+          <tr>
+            <td style="padding: 40px 40px 30px; text-align: center; background: linear-gradient(135deg, #48bb78 0%, #38a169 100%); border-radius: 12px 12px 0 0;">
+              <h1 style="margin: 0; color: #ffffff; font-size: 28px; font-weight: 600;">Payout Completed</h1>
+            </td>
+          </tr>
+          
+          <tr>
+            <td style="padding: 40px;">
+              <p style="margin: 0 0 20px; color: #2d3748; font-size: 16px; line-height: 1.6;">
+                Hi <strong>{{recipient_name}}</strong>,
+              </p>
+              
+              <p style="margin: 0 0 20px; color: #2d3748; font-size: 16px; line-height: 1.6;">
+                Your payout has been processed successfully. The funds will be transferred to your designated account.
+              </p>
+              
+              <div style="background-color: #f7fafc; padding: 20px; margin: 24px 0; border-radius: 8px;">
+                <table width="100%" cellpadding="8" cellspacing="0" border="0">
+                  <tr>
+                    <td style="color: #718096; font-size: 14px; padding: 8px 0;">Payout ID</td>
+                    <td style="color: #2d3748; font-size: 14px; font-weight: 600; text-align: right; padding: 8px 0;">{{payout_id}}</td>
+                  </tr>
+                  <tr>
+                    <td style="color: #718096; font-size: 14px; padding: 8px 0; border-top: 1px solid #e2e8f0;">Payout Amount</td>
+                    <td style="color: #2d3748; font-size: 20px; font-weight: 700; text-align: right; padding: 8px 0; border-top: 1px solid #e2e8f0;">{{formatCurrency payout_amount currency}}</td>
+                  </tr>
+                  <tr>
+                    <td style="color: #718096; font-size: 14px; padding: 8px 0; border-top: 1px solid #e2e8f0;">Transfer Method</td>
+                    <td style="color: #2d3748; font-size: 14px; font-weight: 600; text-align: right; padding: 8px 0; border-top: 1px solid #e2e8f0;">{{transfer_method}}</td>
+                  </tr>
+                  <tr>
+                    <td style="color: #718096; font-size: 14px; padding: 8px 0; border-top: 1px solid #e2e8f0;">Account</td>
+                    <td style="color: #2d3748; font-size: 14px; font-weight: 600; text-align: right; padding: 8px 0; border-top: 1px solid #e2e8f0;">{{masked_account}}</td>
+                  </tr>
+                  <tr>
+                    <td style="color: #718096; font-size: 14px; padding: 8px 0; border-top: 1px solid #e2e8f0;">Processing Date</td>
+                    <td style="color: #2d3748; font-size: 14px; font-weight: 600; text-align: right; padding: 8px 0; border-top: 1px solid #e2e8f0;">{{formatDateTime payout_date}}</td>
+                  </tr>
+                  <tr>
+                    <td style="color: #718096; font-size: 14px; padding: 8px 0; border-top: 1px solid #e2e8f0;">Expected Arrival</td>
+                    <td style="color: #2d3748; font-size: 14px; font-weight: 600; text-align: right; padding: 8px 0; border-top: 1px solid #e2e8f0;">{{formatDate expected_arrival}}</td>
+                  </tr>
+                  {{#if reference_number}}
+                  <tr>
+                    <td style="color: #718096; font-size: 14px; padding: 8px 0; border-top: 1px solid #e2e8f0;">Reference Number</td>
+                    <td style="color: #2d3748; font-size: 14px; font-weight: 600; text-align: right; padding: 8px 0; border-top: 1px solid #e2e8f0;">{{reference_number}}</td>
+                  </tr>
+                  {{/if}}
+                </table>
+              </div>
+              
+              <div style="background-color: #f0fff4; border-left: 4px solid #48bb78; padding: 16px; margin: 24px 0; border-radius: 4px;">
+                <p style="margin: 0; color: #2f855a; font-size: 14px; line-height: 1.6;">
+                  <strong>Status:</strong> Payout processed successfully
+                </p>
+              </div>
+              
+              <p style="margin: 24px 0 0; color: #718096; font-size: 14px; line-height: 1.6;">
+                The funds typically arrive within {{arrival_days}} business days, depending on your bank and transfer method.
+              </p>
+            </td>
+          </tr>
+          
+          <tr>
+            <td style="padding: 30px 40px; background-color: #f7fafc; border-radius: 0 0 12px 12px; border-top: 1px solid #e2e8f0;">
+              <p style="margin: 0 0 12px; color: #718096; font-size: 13px; line-height: 1.6; text-align: center;">
+                Questions? Contact <a href="mailto:payouts@zenpay.com" style="color: #667eea; text-decoration: none;">payouts@zenpay.com</a>
+              </p>
+              <p style="margin: 0; color: #a0aec0; font-size: 12px; text-align: center;">
+                © {{year}} ZenPay. All rights reserved.
+              </p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
+

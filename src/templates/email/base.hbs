@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{subject}} - ZenPay</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f5f7fa;">
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #f5f7fa; padding: 40px 20px;">
+    <tr>
+      <td align="center">
+        <table width="600" cellpadding="0" cellspacing="0" border="0" style="background-color: #ffffff; border-radius: 12px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+          <tr>
+            <td style="padding: 24px 40px 0; text-align: center;">
+              {{#if brand_logo_url}}
+                <img src="{{brand_logo_url}}" alt="ZenPay" width="40" height="40" style="display:inline-block;border:0;outline:none;text-decoration:none;" />
+              {{/if}}
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 40px;">
+              <h2 style="margin: 0 0 20px; color: #2d3748; font-size: 24px; font-weight: 600;">{{subject}}</h2>
+              <p style="margin: 0 0 20px; color: #4a5568; font-size: 16px; line-height: 1.6;">
+                {{{content}}}
+              </p>
+            </td>
+          </tr>
+          
+          <tr>
+            <td style="padding: 30px 40px; background-color: #f7fafc; border-radius: 0 0 12px 12px; border-top: 1px solid #e2e8f0;">
+              <p style="margin: 0 0 12px; color: #718096; font-size: 13px; line-height: 1.6; text-align: center;">
+                Questions? Contact <a href="mailto:support@zenpay.com" style="color: #667eea; text-decoration: none;">support@zenpay.com</a>
+              </p>
+              <p style="margin: 0; color: #a0aec0; font-size: 12px; text-align: center;">
+                © {{year}} ZenPay. All rights reserved.
+              </p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
+

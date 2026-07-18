@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KYC Verification Approved - ZenPay</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f5f7fa;">
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #f5f7fa; padding: 40px 20px;">
+    <tr>
+      <td align="center">
+        <table width="600" cellpadding="0" cellspacing="0" border="0" style="background-color: #ffffff; border-radius: 12px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+          <tr>
+            <td style="padding: 40px 40px 30px; text-align: center; background: linear-gradient(135deg, #48bb78 0%, #38a169 100%); border-radius: 12px 12px 0 0;">
+              <h1 style="margin: 0; color: #ffffff; font-size: 28px; font-weight: 600;">KYC Verification Approved</h1>
+            </td>
+          </tr>
+          
+          <tr>
+            <td style="padding: 40px;">
+              <p style="margin: 0 0 20px; color: #2d3748; font-size: 16px; line-height: 1.6;">
+                Hi <strong>{{merchant_name}}</strong>,
+              </p>
+              
+              <p style="margin: 0 0 20px; color: #2d3748; font-size: 16px; line-height: 1.6;">
+                Great news! Your KYC verification has been approved. You can now access all features and start accepting payments.
+              </p>
+              
+              <div style="background-color: #f0fff4; border-left: 4px solid #48bb78; padding: 16px; margin: 24px 0; border-radius: 4px;">
+                <p style="margin: 0 0 8px; color: #2f855a; font-size: 14px; line-height: 1.6;">
+                  <strong>Business Name:</strong> {{business_name}}
+                </p>
+                <p style="margin: 0 0 8px; color: #2f855a; font-size: 14px; line-height: 1.6;">
+                  <strong>Merchant ID:</strong> {{merchant_id}}
+                </p>
+                <p style="margin: 0; color: #2f855a; font-size: 14px; line-height: 1.6;">
+                  <strong>Verification Date:</strong> {{formatDate verification_date}}
+                </p>
+              </div>
+              
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin: 32px 0;">
+                <tr>
+                  <td align="center">
+                    <a href="{{dashboard_url}}" style="display: inline-block; padding: 14px 32px; background: linear-gradient(135deg, #48bb78 0%, #38a169 100%); color: #ffffff; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 16px;">
+                      Go to Dashboard
+                    </a>
+                  </td>
+                </tr>
+              </table>
+              
+              <p style="margin: 24px 0 0; color: #718096; font-size: 14px; line-height: 1.6;">
+                Next steps:
+              </p>
+              <ul style="margin: 8px 0; padding-left: 20px; color: #4a5568; font-size: 14px; line-height: 1.8;">
+                <li>Generate your API keys</li>
+                <li>Configure payment methods</li>
+                <li>Set up webhooks</li>
+                <li>Integrate with your application</li>
+              </ul>
+            </td>
+          </tr>
+          
+          <tr>
+            <td style="padding: 30px 40px; background-color: #f7fafc; border-radius: 0 0 12px 12px; border-top: 1px solid #e2e8f0;">
+              <p style="margin: 0 0 12px; color: #718096; font-size: 13px; line-height: 1.6; text-align: center;">
+                Questions? Contact <a href="mailto:support@zenpay.com" style="color: #667eea; text-decoration: none;">support@zenpay.com</a>
+              </p>
+              <p style="margin: 0; color: #a0aec0; font-size: 12px; text-align: center;">
+                © {{year}} ZenPay. All rights reserved.
+              </p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
+

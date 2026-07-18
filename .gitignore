@@ -1,0 +1,8 @@
+.env.*
+
+*.md
+!readme.md
+
+*.log
+node_modules
+dist
