@@ -23,7 +23,7 @@ export const EnvironmentConfig = () => ({
     name: process.env.DATABASE_NAME || 'valorapays_communication_dev',
     synchronize: process.env.DATABASE_SYNC === 'true' || false,
     logging: process.env.DATABASE_LOGGING === 'true' || false,
-    ssl: process.env.DATABASE_SSL === 'true' || false,
+    ssl: process.env.DATABASE_SSL === 'true' ? { rejectUnauthorized: false } : false,
   },
 
   // Redis Configuration
