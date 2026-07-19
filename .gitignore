@@ -6,3 +6,7 @@
 *.log
 node_modules
 dist
+# secrets
+.env
+.env.local
+.env.*.local

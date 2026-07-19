@@ -169,3 +169,4 @@ curl http://localhost:5006/health
 ## License
 
 License by WebBuddy LLC
+http://brospaytech-communication.ap-south-1.elasticbeanstalk.com/communication/api/v1/health
